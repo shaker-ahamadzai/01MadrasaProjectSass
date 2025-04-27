@@ -1,0 +1,17 @@
+{
+  "name": "my-first-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concat": "^1.0.3",
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^11.0.1"
+  }
+}

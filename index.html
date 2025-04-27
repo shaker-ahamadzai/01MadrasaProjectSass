@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+
+    <div class="navigation">
+      <input type="checkbox" id="navi_toggle" class="navigation__checkbox">
+      <label for="navi_toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+
+        <ul class="navigation__list">
+          <li class="navigation__item">
+              <a href="#section-about" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+              <a href="#section-courses" class="navigation__link">Courses</a>
+          </li>
+          <li class="navigation__item">
+              <a href="#section-prayer-timings" class="navigation__link">Prayer Timings</a>
+          </li>
+          <li class="navigation__item">
+              <a href="#section-team" class="navigation__link">Teame</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-blog-posts" class="navigation__link">Blog Posts</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-testimonials" class="navigation__link">Testimonials</a>
+          </li>
+          <li class="navigation__item">
+              <a href="#section-contact" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__logo-box">
+        <img
+          src="imgs/ChatGPT Image Apr 20, 2025, 08_56_36 PM.png"
+          alt="logo-img"
+          class="header__logo"
+        />
+      </div>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main"> NOOR Islamic Academy </span>
+          <span class="heading-primary--sub">
+            Guiding hearts through the light of knowledge.
+            <!-- and the teachings of -->
+            <!-- Qur'an and Sunnah. -->
+          </span>
+        </h1>
+
+        <div class="btn-box">
+          <a href="#section-courses" class="btn btn-link btn-primary rounded">View Courses</a>
+          <a href="#section-prayer-timings" class="btn btn-link btn-secondary rounded">
+            Today Prayer Times
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-about" id="section-about">
+        <div class="u-center-text">
+          <h2 class="heading-secondary mb-3">
+            about
+            <span class="heading-secondary--main"> us </span>
+          </h2>
+        </div>
+
+        <div class="grid grid-2-col info-box">
+          <div style="width:100%;">
+            <img
+              src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+              alt="person reading the quran"
+              class="section-about--img rounded"
+            />
+          </div>
+          <div>
+            <h3 class="heading-tertiary mb-1">Noor Islamic Academy</h3>
+            <p class="paragraph mb-3">
+              is dedicated to providing authentic Islamic education rooted in
+              the Qur'an and Sunnah. Our mission is to nurture a generation of
+              students who are grounded in faith, character, and knowledge.
+              Whether you're a beginner in Islamic studies or seeking advanced
+              knowledge, we offer structured programs tailored to all levels.
+            </p>
+
+            <p class="paragraph mb-3">
+              We believe education is a form of worship, and we aim to create an
+              environment where students can grow spiritually, intellectually,
+              and ethically.
+            </p>
+
+            <a href="#" class="btn btn-link btn-underline">Learn More &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-courses" id="section-courses">
+        <div class="u-center-text">
+          <h2 class="heading-secondary mb-5">
+            Explore Our <span class="heading-secondary--main">Courses</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-3-col">
+          <div class="card">
+            <img
+              src="imgs/andri-helmansyah-e9tCOGG40mw-unsplash.jpg"
+              alt="quran-img"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h1 class="card__info--heading">Quran studies</h1>
+
+              <ul class="card__list">
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> recite the Queran with proper Tajweed. </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> Memorization (Hifz) programs for all ages.</span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    Deep dive into Tafsir (interpretation) of the Holy Qur’an.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="imgs/defrino-maasy-HNM8GQN8D3I-unsplash.jpg"
+              alt="quran-img"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h1 class="card__info--heading">Hadith & Sunnah</h1>
+
+              <ul class="card__list">
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> Study the sayings of the Prophet Muhammad. </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> Learn the significance of Hadith in daily life. </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    Courses include Sahih Bukhari, Sahih Muslim & more.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="imgs/defrino-maasy-HNM8GQN8D3I-unsplash.jpg"
+              alt="quran-img"
+              class="card__img"
+            />
+
+            <div class="card__info">
+              <h3 class="card__info--heading">Fiqh & Islamic law</h3>
+
+              <ul class="card__list">
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>Understand Islamic rulings for everyday life. </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    Topics include purification, prayer, fasting, zakat, and
+                    more.</span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    ased on authentic sources from major schools of thought.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/Hero-img.jpg" alt="quran-img" class="card__img" />
+            <div class="card__info">
+              <h1 class="card__info--heading">Arabic language</h1>
+
+              <ul class="card__list">
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    Learn classical Arabic to understand Islamic texts.
+                  </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    Vocabulary building, grammar, and conversational
+                    Arabic.</span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> Beginner to advanced levels available. </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="imgs/andri-helmansyah-e9tCOGG40mw-unsplash.jpg"
+              alt="quran-img"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h1 class="card__info--heading">Quran studies</h1>
+
+              <ul class="card__list">
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> recite the Queran with proper Tajweed. </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> Memorization (Hifz) programs for all ages.</span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    Deep dive into Tafsir (interpretation) of the Holy Qur’an.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="imgs/defrino-maasy-HNM8GQN8D3I-unsplash.jpg"
+              alt="quran-img"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h1 class="card__info--heading">Hadith & Sunnah</h1>
+
+              <ul class="card__list">
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> Study the sayings of the Prophet Muhammad. </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span> Learn the significance of Hadith in daily life. </span>
+                </li>
+                <li>
+                  <img
+                    src="icons/arrow-right.svg"
+                    alt=""
+                  />
+                  <span>
+                    Courses include Sahih Bukhari, Sahih Muslim & more.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text mt-4">
+          <a href="coursePage.html" class="btn btn-link btn-primary"
+            >View More Courses &rarr;</a
+          >
+        </div>
+      </section>
+
+      <section class="section-prayer-timings" id="section-prayer-timings">
+        <div class="u-center-text">
+          <h2 class="heading-secondary mb-4 text-white">
+            Prayer <span class="heading-secondary--main">Timings</span>
+          </h2>
+        </div>
+
+        <div class="d-flex">
+          <div class="prayer">
+            <p class="prayer__time--name">Dawn Prayer</p>
+            <p class="prayer__name">Fajr</p>
+            <p class="prayer__time--num">5:12 AM</p>
+          </div>
+          <div class="prayer">
+            <p class="prayer__time--name">Snrise Time</p>
+            <p class="prayer__name">Dhuhr</p>
+            <p class="prayer__time--num">12:45 PM</p>
+          </div>
+          <div class="prayer">
+            <p class="prayer__time--name">Afternoon</p>
+            <p class="prayer__name">Asr</p>
+            <p class="prayer__time--num">4:15 PM</p>
+          </div>
+          <div class="prayer">
+            <p class="prayer__time--name">Sunset</p>
+            <p class="prayer__name">Maghrib</p>
+            <p class="prayer__time--num">6:30 PM</p>
+          </div>
+          <div class="prayer">
+            <p class="prayer__time--name">Evening Prayer</p>
+            <p class="prayer__name">Isha</p>
+            <p class="prayer__time--num">8:00 PM</p>
+          </div>
+          <div class="prayer">
+            <p class="prayer__time--name">Jumah Prayer</p>
+            <p class="prayer__name">Khudba</p>
+            <p class="prayer__time--num">1:00 PM</p>
+          </div>
+        </div>
+
+        <div class="mt-4 u-center-text">
+          <button class="btn btn-primary btn-rounded mt-3">
+            Use My Location
+          </button>
+        </div>
+      </section>
+
+      <section class="section section-team" id="section-team">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">
+            Meet our <span class="heading-secondary--main">Team</span>
+          </h2>
+
+          <p class="paragraph mb-4 mt-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            cumque!
+          </p>
+        </div>
+
+        <div class="grid grid-col-2-card">
+          <div>
+            <div class="profile__card">
+              <div class="grid grid-2-col">
+                <div class="profile__card-img-box">
+                  <img
+                    src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="profile__card-agent">
+                  <p class="profile__card-agent--name">Ahmad Omari</p>
+                  <p class="profile__card-agent--job">
+                    Chief Executive Officer
+                  </p>
+                  <p class="profile__card-agent--info">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Iusto, perspiciatis.
+                  </p>
+                  <div class="row mt-2">
+                    <a href="#"
+                      >
+                      <img
+                        src="icons/facebook-f.svg"
+                        alt=""
+                    />
+                  </a>
+                    <a href="#"
+                      ><img
+                        src="icons/instagram.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/whatsapp.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/x-twitter.svg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="profile__card">
+              <div class="grid grid-2-col">
+                <div class="profile__card-img-box">
+                  <img
+                    src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="profile__card-agent">
+                  <p class="profile__card-agent--name">Ali Shafaq</p>
+                  <p class="profile__card-agent--job">
+                    Chief Executive Officer
+                  </p>
+                  <p class="profile__card-agent--info">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Iusto, perspiciatis.
+                  </p>
+                  <div class="row mt-2">
+                    <a href="#"
+                      ><img
+                        src="icons/facebook-f.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/instagram.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/whatsapp.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/x-twitter.svg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="profile__card">
+              <div class="grid grid-2-col">
+                <div class="profile__card-img-box">
+                  <img
+                    src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="profile__card-agent">
+                  <p class="profile__card-agent--name">Fahim Naseri</p>
+                  <p class="profile__card-agent--job">
+                    Chief Executive Officer
+                  </p>
+                  <p class="profile__card-agent--info">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Iusto, perspiciatis.
+                  </p>
+                  <div class="row mt-2">
+                    <a href="#"
+                      ><img
+                        src="icons/facebook-f.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/instagram.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/whatsapp.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/x-twitter.svg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="profile__card">
+              <div class="grid grid-2-col">
+                <div class="profile__card-img-box">
+                  <img
+                    src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="profile__card-agent">
+                  <p class="profile__card-agent--name">Wais Badr</p>
+                  <p class="profile__card-agent--job">
+                    Chief Executive Officer
+                  </p>
+                  <p class="profile__card-agent--info">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Iusto, perspiciatis.
+                  </p>
+                  <div class="row mt-2">
+                    <a href="#"
+                      ><img
+                        src="icons/facebook-f.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/instagram.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/whatsapp.svg"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="icons/x-twitter.svg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-blog-post" id="section-blog-posts">
+        <div class="u-center-text mb-4">
+          <h2 class="heading-secondary">
+            Recent <span class="heading-secondary--main">Blog</span> post
+          </h2>
+        </div>
+
+        <div class="grid grid-3-col posts">
+          <div class="post">
+            <img
+              src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+              class="post-img"
+              alt=""
+            />
+
+            <div class="post-time">December 12</div>
+
+            <div class="post-info">
+              <h5 class="post-info-title">
+                Why you should Teach Islamic Fiqha to you're children.
+              </h5>
+
+              <div class="post-publisher mt-4 mb-3">
+                <span>👨‍🔬 Ahmad Sudais</span> / <span>🗣 Fiqha</span>
+              </div>
+              <hr />
+              <div class="mt-3">
+                <a href="#" class="btn btn-link btn-primary"
+                  >Read More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <img
+              src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+              class="post-img"
+              alt=""
+            />
+
+            <div class="post-time">December 12</div>
+
+            <div class="post-info">
+              <h5 class="post-info-title">
+                What are the government Responsibilies.
+              </h5>
+
+              <div class="post-publisher mt-4 mb-3">
+                <span>👨‍🔬 Omar Shoib</span> / <span>🗣 Ismaic Government</span>
+              </div>
+              <hr />
+              <div class="mt-3">
+                <a href="#" class="btn btn-link btn-primary"
+                  >Read More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <img
+              src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+              class="post-img"
+              alt=""
+            />
+
+            <div class="post-time">December 12</div>
+
+            <div class="post-info">
+              <h5 class="post-info-title">
+                Importance of study in islam for women.
+              </h5>
+
+              <div class="post-publisher mt-4 mb-3">
+                <span>👨‍🔬 Hafiz Zain</span> / <span>🗣 Study in Islam</span>
+              </div>
+              <hr />
+              <div class="mt-3">
+                <a href="blogPost.html" class="btn btn-link btn-primary"
+                  >Read More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <img
+              src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg"
+              class="post-img"
+              alt=""
+            />
+
+            <div class="post-time">December 12</div>
+
+            <div class="post-info">
+              <h5 class="post-info-title">
+                Why you should Teach Islamic Fiqha to you're children.
+              </h5>
+
+              <div class="post-publisher mt-4 mb-3">
+                <span>👨‍🔬 Ahmad Sudais</span> / <span>🗣 Fiqha</span>
+              </div>
+              <hr />
+              <div class="mt-3">
+                <a href="#" class="btn btn-link btn-primary"
+                  >Read More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text mt-5">
+          <a href="#" class="btn btn-link btn-primary"
+            >View All Post &rarr;</a
+          >
+        </div>
+
+      </section>
+
+
+      <section class="section section-testimonial" id="section-testimonials">
+        <div class="u-center-text">
+
+          <h2 class="heading-secondary">customers <span class="heading-secondary--main">testimonials</span></h2>
+        </div>
+
+
+        <div class="carousel testimonial">
+          <div class="slide slide-1 slider-grid">
+            <img src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg" alt="boy reading the quran" class="testimonial__img">
+            <blockquote>
+              <p class="testimonial__text">
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, reiciendis! "
+              </p>
+
+              <p class="testimonial__author">
+                M.Shaker Ahmadzai
+              </p>
+
+              <p class="testimonial__job">
+                Student in NOOR Acadimy
+              </p>
+            </blockquote>
+          </div>
+          <div class="slide slide-2 slider-grid">
+            <img src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg" alt="boy reading the quran" class="testimonial__img">
+            <blockquote>
+              <p class="testimonial__text">
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, reiciendis! "
+              </p>
+
+              <p class="testimonial__author">
+                M.Shaker Ahmadzai
+              </p>
+
+              <p class="testimonial__job">
+                Student in NOOR Acadimy
+              </p>
+            </blockquote>
+          </div>
+          <div class="slide slide-3 slider-grid">
+            <img src="imgs/mataq-darul-ulum-FIE6XplzgZs-unsplash (1).jpg" alt="boy reading the quran" class="testimonial__img">
+            <blockquote>
+              <p class="testimonial__text">
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, reiciendis! "
+              </p>
+
+              <p class="testimonial__author">
+                M.Sadiq Ahmadzai
+              </p>
+
+              <p class="testimonial__job">
+                Student in NOOR Acadimy
+              </p>
+            </blockquote>
+          </div>
+
+          <div class="dots">
+          </div>
+          <button class="btn-primary btn-positioned btn-left">
+            &larr;
+          </button>
+          <button class="btn-primary btn-positioned btn-right">
+            &rarr;
+          </button>
+        </div>
+
+      </section>
+
+
+
+      <section class="section section-contact" id="section-contact">
+        <div class="u-center-text mb-5">
+          <h2 class="heading-secondary">
+            Contact <span class="heading-secondary--main"> Us </span>
+          </h2>
+
+          <h3 class="contact-heading-tertiary">Get in Touch</h3>
+          <p class="contact-paragraph">
+            If you have any question or want to enroll any course we'd love to
+            hear from you. Feel free to reach out via the contact form,email,or
+            phone.
+          </p>
+        </div>
+
+        <div class="grid grid-col-2-card">
+          <div class="contact">
+            <div class="contact-address row">
+              <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+              </svg>
+              
+              <div>
+                <p class="contact-address-title">Address</p>
+                <p class="contact-address-info">
+                  123 Islamic way. knowledge city.NY
+                </p>
+              </div>
+            </div>
+            <div class="contact-address row">
+              <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+              </svg>
+              
+              <div>
+                <p class="contact-address-title">Call Us</p>
+                <p class="contact-address-info">+1 2345 6789</p>
+              </div>
+            </div>
+            <div class="contact-address row">
+              <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+              </svg>
+              
+              <div>
+                <p class="contact-address-title">Email Us</p>
+                <p class="contact-address-info">
+                  123 Islamic way. knowledge city.NY
+                </p>
+              </div>
+            </div>
+
+            <div class="map contact-map" id="map"></div>
+          </div>
+
+          <div class="contact-form">
+            <form action="mailto:shakerahmadzai433@gmail.com">
+              <div class="row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" class="input" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" class="input" />
+                </div>
+              </div>
+              <div class="form-group form-group-full">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="input input-full" />
+              </div>
+
+              <div class="mt-5">
+                <div class="form-group form-group-full">
+                  <label for="message mt-5">Message</label>
+                  <textarea
+                    name="messge"
+                    id="message"
+                    class="text-area"
+                    rows="12"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="u-center-text">
+                <button class="btn btn-primary btn-rounded">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">
+        © 2025 Noor Islamic Academy. All rights reserved.
+      </p>
+    </footer>
+
+    <a href="#" class="btn-scroll-top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+        <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+      </svg>
+      
+    </butto>
+    <noscript>Your browser doesn't suuport javaScript</noscript>
+    <script src="js/index.js"></script>
+  </body>
+</html>

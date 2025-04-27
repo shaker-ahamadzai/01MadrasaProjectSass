@@ -1,0 +1,49 @@
+.contact {
+  padding: 1.5rem 1rem;
+  border-top: 2px solid $color-golden;
+  border-bottom: 2px solid $color-golden;
+
+  &-heading-tertiary {
+    padding: 1.5rem;
+  }
+
+  &-map {
+    width: 90%;
+    height: 30rem;
+    box-shadow: 0 0 10px rgba($color-black, 0.3);
+  }
+
+  &-address {
+    padding: 2rem 1rem;
+  }
+
+  &-form {
+    padding: 1.5rem 1rem 0 1rem;
+    border-top: 2px solid $color-golden;
+    border-bottom: 2px solid $color-golden;
+  }
+
+  &__icon {
+    width: 2.5rem;
+  }
+}
+
+.form-group,
+.form-group-full {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.input,
+.text-area {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  border: 1px solid $color-gray-light;
+  border-radius: 0.5rem;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 10px rgba($color-golden, 0.3);
+  }
+}

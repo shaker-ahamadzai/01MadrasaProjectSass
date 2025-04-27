@@ -1,0 +1,68 @@
+.testimonial {
+  margin: 8rem auto;
+  max-width: 90%;
+  height: 30rem;
+  padding: 1rem 2.5rem;
+  // padding-left: 3rem;
+  border-radius: 0.5rem;
+  position: relative;
+
+  @include respond(phone) {
+    height: 65rem;
+  }
+
+  &__img {
+    width: 35rem;
+    border-radius: 1rem;
+    transform: scale(1.2) translateX(2.5rem);
+
+    @include respond(phone) {
+      width: 90%;
+      transform: scale(1) translateX(0);
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__author {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+  }
+
+  &__job {
+    font-size: 1.4rem;
+  }
+}
+
+.slide {
+  background-color: $color-golden;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: 1rem 2.5rem;
+  transition: transform 0.8s linear;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 3rem);
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: $color-golden;
+  cursor: pointer;
+  &--active {
+    background-color: $color-gray-dark;
+  }
+}

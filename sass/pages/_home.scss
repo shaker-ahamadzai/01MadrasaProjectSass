@@ -1,0 +1,50 @@
+.section-about {
+  padding-top: 15rem !important;
+  margin-top: -10vh;
+
+  &--img {
+    width: 100%;
+    // transform: scale(1.1) translateX(40px);
+  }
+}
+
+.info-box {
+  padding: 2.5rem 1rem;
+  background-color: $color-golden;
+
+  @include respond(phone) {
+    padding: 3rem;
+  }
+}
+
+.section-courses {
+  margin-top: -7vh;
+}
+
+.section-prayer-timings {
+  background-color: $color-gray-dark;
+  padding: 5rem 2rem;
+  margin: 15rem 0;
+  margin-top: 3rem;
+}
+
+.section-team {
+  padding: 0rem 2rem;
+}
+
+.section-blog-post {
+  padding: 0rem 8rem;
+}
+
+.section-testimonial {
+  overflow: hidden;
+}
+
+.section-contact {
+  padding: 0rem 8rem;
+}
+
+.section {
+  padding-top: 0.5rem;
+  padding-bottom: 20rem;
+}

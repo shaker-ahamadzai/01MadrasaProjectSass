@@ -1,0 +1,79 @@
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  column-gap: $gutter-horizontal-sm;
+}
+
+.grid-2-col {
+  grid-template-columns: 1fr 1.5fr;
+  @include respond(tab-port) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10rem;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 0.7fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 4rem;
+  }
+}
+
+.grid-3-col {
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: $gutter-horizontal-sm;
+  row-gap: $gutter-horizontal-sm;
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding: 2rem;
+  }
+  @include respond(phone) {
+    grid-template-columns: 85%;
+    column-gap: 0;
+  }
+}
+
+.card__list {
+  li {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: start;
+
+    span {
+      margin-top: -0.4rem;
+    }
+  }
+}
+
+.grid-col-2-card {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  row-gap: $gutter-verticle;
+  justify-content: space-between;
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.slider-grid {
+  display: grid;
+  grid-template-columns: 40rem 1fr;
+  align-items: center;
+  column-gap: $gutter-horizontal-lg;
+  @include respond(phone) {
+    padding: 1.5rem;
+    grid-template-columns: 80%;
+    justify-content: center;
+    row-gap: 5rem;
+  }
+}

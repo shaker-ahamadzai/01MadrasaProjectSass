@@ -1,0 +1,105 @@
+.btn {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: 0.15s transform ease-out;
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &-link {
+    &:link {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &-rounded {
+    border-radius: 0.5rem;
+  }
+
+  &-primary {
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    background-color: $color-golden;
+    border: 1px solid $color-golden;
+    color: $color-white;
+  }
+
+  &-secondary {
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    color: #c7c7c7;
+    border: 1px solid currentColor;
+  }
+
+  &-underline {
+    color: $color-gray-dark;
+    font-size: 1.4rem;
+    border-bottom: 1px solid currentColor;
+    letter-spacing: 2px;
+  }
+
+  &-box {
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    animation: moveInBottom 0.5s ease-out 0.75s backwards;
+  }
+
+  &-positioned {
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    &:active {
+      box-shadow: 0 0 0.5rem rgba($color-black, 0.2);
+    }
+  }
+
+  &-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    box-shadow: 0 0 1rem rgba($color-black, 0.2);
+    transform: translate(-10%, -50%);
+  }
+  &-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    box-shadow: 0 0 1rem rgba($color-black, 0.2);
+    transform: translate(50%, -50%);
+  }
+}
+
+.btn-scroll-top {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 1000;
+  background-color: $color-golden;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  animation: scroll-btn 1.5s linear infinite;
+  display: none;
+  svg {
+    width: 2.5rem;
+    stroke: $color-black;
+  }
+}
+
+.show {
+  display: block;
+}

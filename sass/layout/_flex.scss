@@ -1,0 +1,30 @@
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: $gutter-horizontal-sm;
+
+  @include respond(phone) {
+    gap: $gutter-horizontal-lg;
+  }
+}
+
+.row,
+.row-left {
+  display: flex;
+  gap: $gutter-horizontal-sm;
+}
+
+.row {
+  align-items: center;
+  @include respond(phone) {
+    justify-content: center;
+  }
+}
+
+.row-left {
+  @include respond(phone) {
+    justify-content: start;
+  }
+}

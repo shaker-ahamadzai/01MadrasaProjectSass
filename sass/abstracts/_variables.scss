@@ -1,0 +1,28 @@
+/*
+
+| Color Name    | Hex Code  | Usage                   |
+| ------------- | --------- | ----------------------- |
+| Deep Green    | `#005F40` | Primary color           |
+| Sand Beige    | `#F4EBD0` | Backgrounds/Light theme |
+| Midnight Blue | `#002D40` | Footer/Header           |
+| Gold Accent   | `#D4AF37` | Highlights/CTA Buttons  |
+| White         | `#FFFFFF` | Content backgrounds     |
+
+*/
+
+$color-primary: #005f40;
+$color-midnight-blue: #002d40;
+$color-light-theme: #f4ebd0;
+$color-gray-dark: #333;
+$color-gray-light: #ccc;
+$color-golden: #d4af37;
+$color-white: #fff;
+$color-black: #000;
+
+$grid-width: 114rem;
+$gutter-verticle: 8rem;
+$gutter-verticle-sm: 10rem;
+
+$gutter-horizontal-sm: 3rem;
+$gutter-horizontal: 6rem;
+$gutter-horizontal-lg: 8rem;
